@@ -121,7 +121,7 @@ class WebGraph():
 
             for i in range(0, n):
                 url = self._index_to_url(i)
-                print("url=", url)
+                # print("url=", url)
                 if url_satisfies_query(url, query):
                     # setting the corresponding index to one
                     v[i] = 1
