@@ -454,296 +454,82 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
    
-    n= 16862
-    INFO:root:rank=0 pagerank=1.0038e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
-    INFO:root:rank=1 pagerank=8.9224e-04 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
-    INFO:root:rank=2 pagerank=7.0390e-04 url=www.lawfareblog.com/britains-coronavirus-response
-    INFO:root:rank=3 pagerank=6.9153e-04 url=www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
-    INFO:root:rank=4 pagerank=6.7041e-04 url=www.lawfareblog.com/israeli-emergency-regulations-location-tracking-coronavirus-carriers
-    INFO:root:rank=5 pagerank=6.6256e-04 url=www.lawfareblog.com/why-congress-conducting-business-usual-face-coronavirus
-    INFO:root:rank=6 pagerank=6.5046e-04 url=www.lawfareblog.com/congressional-homeland-security-committees-seek-ways-support-state-federal-responses-         coronavirus
-    INFO:root:rank=7 pagerank=6.3620e-04 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
-    INFO:root:rank=8 pagerank=6.1248e-04 url=www.lawfareblog.com/house-subcommittee-voices-concerns-over-us-management-coronavirus
-    INFO:root:rank=9 pagerank=6.0187e-04 url=www.lawfareblog.com/livestream-house-oversight-committee-holds-hearing-government-coronavirus-response
+	n= 16862
+	INFO:gensim.models.keyedvectors:precomputing L2-norms of word weight vectors
+	INFO:root:rank = 0 ranking = 1.8834e-08 url= www.lawfareblog.com/ted-cruz-vs-section-230-misrepresenting-communications-decency-act
+	INFO:root:rank = 1 ranking = 1.8139e-08 url= www.lawfareblog.com/guess-what-play-ted-cruz-read-filibuster
+	INFO:root:rank = 2 ranking = 1.8086e-08 url= www.lawfareblog.com/publicity-stunt-postscript-senators-cruz-and-paul-propose-legislation-targeted-killing-domestic
+	INFO:root:rank = 3 ranking = 2.1523e-10 url= www.lawfareblog.com/ap-story-short-term-detention-facilities-afghanistan-and-gambling-casablanca
+	INFO:root:rank = 4 ranking = 0.0000e+00 url= www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
+	INFO:root:rank = 5 ranking = 0.0000e+00 url= www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
+	INFO:root:rank = 6 ranking = 0.0000e+00 url= www.lawfareblog.com/britains-coronavirus-response
+	INFO:root:rank = 7 ranking = 0.0000e+00 url= www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
+	INFO:root:rank = 8 ranking = 0.0000e+00 url= www.lawfareblog.com/israeli-emergency-regulations-location-tracking-coronavirus-carriers
+	INFO:root:rank = 9 ranking = 0.0000e+00 url= www.lawfareblog.com/why-congress-conducting-business-usual-face-coronavirus
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='trump'
    
-    n= 16862
-    INFO:root:rank=0 pagerank=5.7826e-03 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
-    INFO:root:rank=1 pagerank=5.2338e-03 url=www.lawfareblog.com/document-trump-revokes-obama-executive-order-counterterrorism-strike-casualty-reporting
-    INFO:root:rank=2 pagerank=5.1297e-03 url=www.lawfareblog.com/trump-administrations-worrying-new-policy-israeli-settlements
-    INFO:root:rank=3 pagerank=4.6599e-03 url=www.lawfareblog.com/dc-circuit-overrules-district-courts-due-process-ruling-qasim-v-trump
-    INFO:root:rank=4 pagerank=4.5934e-03 url=www.lawfareblog.com/donald-trump-and-politically-weaponized-executive-branch
-    INFO:root:rank=5 pagerank=4.3071e-03 url=www.lawfareblog.com/how-trumps-approach-middle-east-ignores-past-future-and-human-condition
-    INFO:root:rank=6 pagerank=4.0935e-03 url=www.lawfareblog.com/why-trump-cant-buy-greenland
-    INFO:root:rank=7 pagerank=3.7591e-03 url=www.lawfareblog.com/oral-argument-summary-qassim-v-trump
-    INFO:root:rank=8 pagerank=3.4509e-03 url=www.lawfareblog.com/dc-circuit-court-denies-trump-rehearing-mazars-case
-    INFO:root:rank=9 pagerank=3.4484e-03 url=www.lawfareblog.com/second-circuit-rules-mazars-must-hand-over-trump-tax-returns-new-york-prosecutors
-
+	n= 16862
+	INFO:gensim.models.keyedvectors:precomputing L2-norms of word weight vectors
+	INFO:root:rank = 0 ranking = 1.5450e-09 url= www.lawfareblog.com/donald-trump-and-politically-weaponized-executive-branch
+	INFO:root:rank = 1 ranking = 5.1209e-10 url= www.lawfareblog.com/did-donald-trump-jr-admit-violating-computer-fraud-and-abuse-act
+	INFO:root:rank = 2 ranking = 2.9098e-10 url= www.lawfareblog.com/documents-saifullah-paracha-v-donald-j-trump
+	INFO:root:rank = 3 ranking = 2.1813e-10 url= www.lawfareblog.com/cta9-decides-al-nashiri-v-macdonald
+	INFO:root:rank = 4 ranking = 1.9674e-10 url= www.lawfareblog.com/donald-trump-danger-our-national-security
+	INFO:root:rank = 5 ranking = 1.8614e-10 url= www.lawfareblog.com/burden-donald-trump
+	INFO:root:rank = 6 ranking = 1.8245e-10 url= www.lawfareblog.com/does-trump-want-lose-eo-battle-court-or-donald-mcgahn-simply-ineffectual-or-worse
+	INFO:root:rank = 7 ranking = 1.8139e-10 url= www.lawfareblog.com/nashiri-v-macdonald-dismissed
+	INFO:root:rank = 8 ranking = 1.8072e-10 url= www.lawfareblog.com/more-donald-trump-and-justice-department
+	INFO:root:rank = 9 ranking = 1.8064e-10 url= www.lawfareblog.com/donald-trump-paul-manafort-and-pesky-witness-tampering-statute
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='iran'
    
-    n= 16862
-    INFO:root:rank=0 pagerank=4.5746e-03 url=www.lawfareblog.com/praise-presidents-iran-tweets
-    INFO:root:rank=1 pagerank=4.4174e-03 url=www.lawfareblog.com/how-us-iran-tensions-could-disrupt-iraqs-fragile-peace
-    INFO:root:rank=2 pagerank=2.6928e-03 url=www.lawfareblog.com/cyber-command-operational-update-clarifying-june-2019-iran-operation
-    INFO:root:rank=3 pagerank=1.9391e-03 url=www.lawfareblog.com/aborted-iran-strike-fine-line-between-necessity-and-revenge
-    INFO:root:rank=4 pagerank=1.5452e-03 url=www.lawfareblog.com/parsing-state-departments-letter-use-force-against-iran
-    INFO:root:rank=5 pagerank=1.5357e-03 url=www.lawfareblog.com/iranian-hostage-crisis-and-its-effect-american-politics
-    INFO:root:rank=6 pagerank=1.5258e-03 url=www.lawfareblog.com/announcing-united-states-and-use-force-against-iran-new-lawfare-e-book
-    INFO:root:rank=7 pagerank=1.4221e-03 url=www.lawfareblog.com/us-names-iranian-revolutionary-guard-terrorist-organization-and-sanctions-international-     criminal
-    INFO:root:rank=8 pagerank=1.1788e-03 url=www.lawfareblog.com/iran-shoots-down-us-drone-domestic-and-international-legal-implications
-    INFO:root:rank=9 pagerank=1.1463e-03 url=www.lawfareblog.com/israel-iran-syria-clash-and-law-use-force
-
+	n= 16862
+	INFO:gensim.models.keyedvectors:precomputing L2-norms of word weight vectors
+	INFO:root:rank = 0 ranking = 1.1082e-05 url= www.lawfareblog.com/update-military-commissions-continued-health-issues-recusal-motion-and-new-cell-al-iraqi
+	INFO:root:rank = 1 ranking = 9.7579e-06 url= www.lawfareblog.com/how-us-iran-tensions-could-disrupt-iraqs-fragile-peace
+	INFO:root:rank = 2 ranking = 7.5628e-06 url= www.lawfareblog.com/france-makes-play-try-foreign-fighters-iraq
+	INFO:root:rank = 3 ranking = 4.9849e-06 url= www.lawfareblog.com/document-sens-kaine-and-young-introduce-bill-revoke-iraq-force-authorizations
+	INFO:root:rank = 4 ranking = 4.4441e-06 url= www.lawfareblog.com/haftar-attacking-tripoli-us-needs-re-engage-libya
+	INFO:root:rank = 5 ranking = 4.2061e-06 url= www.lawfareblog.com/its-not-only-iraq-and-syria
+	INFO:root:rank = 6 ranking = 3.8283e-06 url= www.lawfareblog.com/assessing-aclu-habeas-petition-behalf-unnamed-us-citizen-held-enemy-combatant-iraq
+	INFO:root:rank = 7 ranking = 3.7903e-06 url= www.lawfareblog.com/primer-can-trump-administration-transfer-american-citizen-enemy-combatant-iraqi-custody
+	INFO:root:rank = 8 ranking = 2.7731e-06 url= www.lawfareblog.com/2002-iraq-aumf-almost-certainly-authorizes-president-use-force-today-iraq-and-might-authorize-use
+	INFO:root:rank = 9 ranking = 2.3138e-06 url= www.lawfareblog.com/iraq-inquiry-committee-releases-report-criticizing-uk-role-iraq-war
    ```
 
    Task 1, part 3:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz
    
-    n= 16862
-    INFO:root:rank=0 pagerank=2.8741e-01 url=www.lawfareblog.com/lawfare-job-board
-    INFO:root:rank=1 pagerank=2.8741e-01 url=www.lawfareblog.com/masthead
-    INFO:root:rank=2 pagerank=2.8741e-01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
-    INFO:root:rank=3 pagerank=2.8741e-01 url=www.lawfareblog.com/documents-related-mueller-investigation
-    INFO:root:rank=4 pagerank=2.8741e-01 url=www.lawfareblog.com/topics
-    INFO:root:rank=5 pagerank=2.8741e-01 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
-    INFO:root:rank=6 pagerank=2.8741e-01 url=www.lawfareblog.com/snowden-revelations
-    INFO:root:rank=7 pagerank=2.8741e-01 url=www.lawfareblog.com/support-lawfare
-    INFO:root:rank=8 pagerank=2.8741e-01 url=www.lawfareblog.com/upcoming-events
-    INFO:root:rank=9 pagerank=2.8741e-01 url=www.lawfareblog.com/our-comments-policy
-
+n= 16862
+INFO:root:rank = 0 ranking = 2.8741e-01 url= www.lawfareblog.com/lawfare-job-board
+INFO:root:rank = 1 ranking = 2.8741e-01 url= www.lawfareblog.com/masthead
+INFO:root:rank = 2 ranking = 2.8741e-01 url= www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+INFO:root:rank = 3 ranking = 2.8741e-01 url= www.lawfareblog.com/documents-related-mueller-investigation
+INFO:root:rank = 4 ranking = 2.8741e-01 url= www.lawfareblog.com/topics
+INFO:root:rank = 5 ranking = 2.8741e-01 url= www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+INFO:root:rank = 6 ranking = 2.8741e-01 url= www.lawfareblog.com/snowden-revelations
+INFO:root:rank = 7 ranking = 2.8741e-01 url= www.lawfareblog.com/support-lawfare
+INFO:root:rank = 8 ranking = 2.8741e-01 url= www.lawfareblog.com/upcoming-events
+INFO:root:rank = 9 ranking = 2.8741e-01 url= www.lawfareblog.com/our-comments-policy
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2
    
-    n= 16862
-    INFO:root:rank=0 pagerank=3.4696e-01 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
-    INFO:root:rank=1 pagerank=2.9521e-01 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
-    INFO:root:rank=2 pagerank=2.9040e-01 url=www.lawfareblog.com/opening-statement-david-holmes
-    INFO:root:rank=3 pagerank=1.5179e-01 url=www.lawfareblog.com/lawfare-podcast-ben-nimmo-whack-mole-game-disinformation
-    INFO:root:rank=4 pagerank=1.5099e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1963
-    INFO:root:rank=5 pagerank=1.5099e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1964
-    INFO:root:rank=6 pagerank=1.5071e-01 url=www.lawfareblog.com/lawfare-podcast-week-was-impeachment
-    INFO:root:rank=7 pagerank=1.4957e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1962
-    INFO:root:rank=8 pagerank=1.4367e-01 url=www.lawfareblog.com/cyberlaw-podcast-mistrusting-google
-    INFO:root:rank=9 pagerank=1.4240e-01 url=www.lawfareblog.com/lawfare-podcast-bonus-edition-gordon-sondland-vs-committee-no-bull
-
-   ```
 
    Task 1, part 4:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose 
    
-    DEBUG:root:computing indices
-    DEBUG:root:computing values
-    n= 16862
-    DEBUG:root:i=0 residual=1.3793821334838867
-    DEBUG:root:i=1 residual=0.11642514914274216
-    DEBUG:root:i=2 residual=0.07495073974132538
-    DEBUG:root:i=3 residual=0.031712669879198074
-    DEBUG:root:i=4 residual=0.01746140420436859
-    DEBUG:root:i=5 residual=0.008529536426067352
-    DEBUG:root:i=6 residual=0.0044392067939043045
-    DEBUG:root:i=7 residual=0.002238823566585779
-    DEBUG:root:i=8 residual=0.0011464565759524703
-    DEBUG:root:i=9 residual=0.0005798051133751869
-    DEBUG:root:i=10 residual=0.00029213540256023407
-    DEBUG:root:i=11 residual=0.00014553092478308827
-    DEBUG:root:i=12 residual=7.149828888941556e-05
-    DEBUG:root:i=13 residual=3.433692472754046e-05
-    DEBUG:root:i=14 residual=1.5638515833416022e-05
-    DEBUG:root:i=15 residual=6.266389391385019e-06
-    DEBUG:root:i=16 residual=2.8251236017240444e-06
-    DEBUG:root:i=17 residual=1.3609912912215805e-06
-    DEBUG:root:i=18 residual=4.311152963509812e-07
-    INFO:root:rank=0 pagerank=2.8741e-01 url=www.lawfareblog.com/lawfare-job-board
-    INFO:root:rank=1 pagerank=2.8741e-01 url=www.lawfareblog.com/masthead
-    INFO:root:rank=2 pagerank=2.8741e-01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
-    INFO:root:rank=3 pagerank=2.8741e-01 url=www.lawfareblog.com/documents-related-mueller-investigation
-    INFO:root:rank=4 pagerank=2.8741e-01 url=www.lawfareblog.com/topics
-    INFO:root:rank=5 pagerank=2.8741e-01 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
-    INFO:root:rank=6 pagerank=2.8741e-01 url=www.lawfareblog.com/snowden-revelations
-    INFO:root:rank=7 pagerank=2.8741e-01 url=www.lawfareblog.com/support-lawfare
-    INFO:root:rank=8 pagerank=2.8741e-01 url=www.lawfareblog.com/upcoming-events
-    INFO:root:rank=9 pagerank=2.8741e-01 url=www.lawfareblog.com/our-comments-policy
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --alpha=0.99999
    
-    DEBUG:root:computing indices
-    DEBUG:root:computing values
-    n= 16862
-    DEBUG:root:i=0 residual=1.3845856189727783
-    DEBUG:root:i=1 residual=0.07088156789541245
-    DEBUG:root:i=2 residual=0.01882227510213852
-    DEBUG:root:i=3 residual=0.006958262529224157
-    DEBUG:root:i=4 residual=0.0027358194347471
-    DEBUG:root:i=5 residual=0.0010345563059672713
-    DEBUG:root:i=6 residual=0.0003774634387809783
-    DEBUG:root:i=7 residual=0.00013533401943277568
-    DEBUG:root:i=8 residual=4.8224112106254324e-05
-    DEBUG:root:i=9 residual=1.7172435036627576e-05
-    DEBUG:root:i=10 residual=6.118058081483468e-06
-    DEBUG:root:i=11 residual=2.173422217310872e-06
-    DEBUG:root:i=12 residual=7.82504116614291e-07
-    INFO:root:rank=0 pagerank=2.8859e-01 url=www.lawfareblog.com/lawfare-job-board
-    INFO:root:rank=1 pagerank=2.8859e-01 url=www.lawfareblog.com/masthead
-    INFO:root:rank=2 pagerank=2.8859e-01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
-    INFO:root:rank=3 pagerank=2.8859e-01 url=www.lawfareblog.com/documents-related-mueller-investigation
-    INFO:root:rank=4 pagerank=2.8859e-01 url=www.lawfareblog.com/topics
-    INFO:root:rank=5 pagerank=2.8859e-01 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
-    INFO:root:rank=6 pagerank=2.8859e-01 url=www.lawfareblog.com/snowden-revelations
-    INFO:root:rank=7 pagerank=2.8859e-01 url=www.lawfareblog.com/support-lawfare
-    INFO:root:rank=8 pagerank=2.8859e-01 url=www.lawfareblog.com/upcoming-events
-    INFO:root:rank=9 pagerank=2.8859e-01 url=www.lawfareblog.com/our-comments-policy
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --filter_ratio=0.2
    
-    DEBUG:root:computing indices
-    DEBUG:root:computing values
-    n= 16862
-    DEBUG:root:i=0 residual=1.2609827518463135
-    DEBUG:root:i=1 residual=0.49858558177948
-    DEBUG:root:i=2 residual=0.13420072197914124
-    DEBUG:root:i=3 residual=0.0692318007349968
-    DEBUG:root:i=4 residual=0.023411516100168228
-    DEBUG:root:i=5 residual=0.010188630782067776
-    DEBUG:root:i=6 residual=0.004910613875836134
-    DEBUG:root:i=7 residual=0.002279882086440921
-    DEBUG:root:i=8 residual=0.0010739191202446818
-    DEBUG:root:i=9 residual=0.0005249588284641504
-    DEBUG:root:i=10 residual=0.00026969940518029034
-    DEBUG:root:i=11 residual=0.00014575093518942595
-    DEBUG:root:i=12 residual=8.241771865868941e-05
-    DEBUG:root:i=13 residual=4.819605601369403e-05
-    DEBUG:root:i=14 residual=2.881278851418756e-05
-    DEBUG:root:i=15 residual=1.7407368432031944e-05
-    DEBUG:root:i=16 residual=1.0556699635344557e-05
-    DEBUG:root:i=17 residual=6.386945642589126e-06
-    DEBUG:root:i=18 residual=3.835165898635751e-06
-    DEBUG:root:i=19 residual=2.295828835485736e-06
-    DEBUG:root:i=20 residual=1.3655146631208481e-06
-    DEBUG:root:i=21 residual=8.102273341137334e-07
-    INFO:root:rank=0 pagerank=3.4696e-01 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
-    INFO:root:rank=1 pagerank=2.9521e-01 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
-    INFO:root:rank=2 pagerank=2.9040e-01 url=www.lawfareblog.com/opening-statement-david-holmes
-    INFO:root:rank=3 pagerank=1.5179e-01 url=www.lawfareblog.com/lawfare-podcast-ben-nimmo-whack-mole-game-disinformation
-    INFO:root:rank=4 pagerank=1.5099e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1963
-    INFO:root:rank=5 pagerank=1.5099e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1964
-    INFO:root:rank=6 pagerank=1.5071e-01 url=www.lawfareblog.com/lawfare-podcast-week-was-impeachment
-    INFO:root:rank=7 pagerank=1.4957e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1962
-    INFO:root:rank=8 pagerank=1.4367e-01 url=www.lawfareblog.com/cyberlaw-podcast-mistrusting-google
-    INFO:root:rank=9 pagerank=1.4240e-01 url=www.lawfareblog.com/lawfare-podcast-bonus-edition-gordon-sondland-vs-committee-no-bull
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
    
-        DEBUG:root:computing indices
-        DEBUG:root:computing values
-        n= 16862
-        DEBUG:root:i=0 residual=1.2827345132827759
-        DEBUG:root:i=1 residual=0.5695679783821106
-        DEBUG:root:i=2 residual=0.38298743963241577
-        DEBUG:root:i=3 residual=0.2173907607793808
-        DEBUG:root:i=4 residual=0.14045004546642303
-        DEBUG:root:i=5 residual=0.10851320624351501
-        DEBUG:root:i=6 residual=0.09284130483865738
-        DEBUG:root:i=7 residual=0.08225572854280472
-        DEBUG:root:i=8 residual=0.07338864356279373
-        DEBUG:root:i=9 residual=0.06561222672462463
-        DEBUG:root:i=10 residual=0.059096433222293854
-        DEBUG:root:i=11 residual=0.0541754886507988
-        DEBUG:root:i=12 residual=0.05111689865589142
-        DEBUG:root:i=13 residual=0.04999383166432381
-        DEBUG:root:i=14 residual=0.05060902237892151
-        DEBUG:root:i=15 residual=0.0525263175368309
-        DEBUG:root:i=16 residual=0.0551888681948185
-        DEBUG:root:i=17 residual=0.05803852900862694
-        DEBUG:root:i=18 residual=0.06059221178293228
-        DEBUG:root:i=19 residual=0.0624784380197525
-        DEBUG:root:i=20 residual=0.06345319747924805
-        DEBUG:root:i=21 residual=0.06340522319078445
-        DEBUG:root:i=22 residual=0.06234566867351532
-        DEBUG:root:i=23 residual=0.06038395315408707
-        DEBUG:root:i=24 residual=0.05769402161240578
-        DEBUG:root:i=25 residual=0.05447976291179657
-        DEBUG:root:i=26 residual=0.05094277113676071
-        DEBUG:root:i=27 residual=0.0472610704600811
-        DEBUG:root:i=28 residual=0.043578535318374634
-        DEBUG:root:i=29 residual=0.04000161215662956
-        DEBUG:root:i=30 residual=0.03660248592495918
-        DEBUG:root:i=31 residual=0.033424295485019684
-        DEBUG:root:i=32 residual=0.030489472672343254
-        DEBUG:root:i=33 residual=0.02780323475599289
-        DEBUG:root:i=34 residual=0.025360697880387306
-        DEBUG:root:i=35 residual=0.023150015622377396
-        DEBUG:root:i=36 residual=0.02115531638264656
-        DEBUG:root:i=37 residual=0.019359197467565536
-        DEBUG:root:i=38 residual=0.01774349994957447
-        DEBUG:root:i=39 residual=0.016290761530399323
-        DEBUG:root:i=40 residual=0.0149843106046319
-        DEBUG:root:i=41 residual=0.01380856242030859
-        DEBUG:root:i=42 residual=0.012749706394970417
-        DEBUG:root:i=43 residual=0.011794854886829853
-        DEBUG:root:i=44 residual=0.010932852514088154
-        DEBUG:root:i=45 residual=0.010153341107070446
-        DEBUG:root:i=46 residual=0.009447379969060421
-        DEBUG:root:i=47 residual=0.008807037957012653
-        DEBUG:root:i=48 residual=0.00822509080171585
-        DEBUG:root:i=49 residual=0.007695489563047886
-        DEBUG:root:i=50 residual=0.007212585769593716
-        DEBUG:root:i=51 residual=0.00677154865115881
-        DEBUG:root:i=52 residual=0.006367980502545834
-        DEBUG:root:i=53 residual=0.005998112726956606
-        DEBUG:root:i=54 residual=0.005658607929944992
-        DEBUG:root:i=55 residual=0.005346357356756926
-        DEBUG:root:i=56 residual=0.005058770999312401
-        DEBUG:root:i=57 residual=0.004793448373675346
-        DEBUG:root:i=58 residual=0.004548261873424053
-        DEBUG:root:i=59 residual=0.004321318585425615
-        DEBUG:root:i=60 residual=0.004110995680093765
-        DEBUG:root:i=61 residual=0.003915745764970779
-        DEBUG:root:i=62 residual=0.0037342202849686146
-        DEBUG:root:i=63 residual=0.0035651903599500656
-        DEBUG:root:i=64 residual=0.0034076401498168707
-        DEBUG:root:i=65 residual=0.0032605668529868126
-        DEBUG:root:i=66 residual=0.0031230042222887278
-        DEBUG:root:i=67 residual=0.0029942821711301804
-        DEBUG:root:i=68 residual=0.0028736344538629055
-        DEBUG:root:i=69 residual=0.002760394709184766
-        DEBUG:root:i=70 residual=0.0026539983227849007
-        DEBUG:root:i=71 residual=0.002553925383836031
-        DEBUG:root:i=72 residual=0.0024596548173576593
-        DEBUG:root:i=73 residual=0.0023707826621830463
-        DEBUG:root:i=74 residual=0.0022869009990245104
-        DEBUG:root:i=75 residual=0.0022076410241425037
-        DEBUG:root:i=76 residual=0.0021326374262571335
-        DEBUG:root:i=77 residual=0.0020616468973457813
-        DEBUG:root:i=78 residual=0.0019943546503782272
-        DEBUG:root:i=79 residual=0.001930529368110001
-        DEBUG:root:i=80 residual=0.0018698793137446046
-        DEBUG:root:i=81 residual=0.0018122568726539612
-        DEBUG:root:i=82 residual=0.0017574297962710261
-        DEBUG:root:i=83 residual=0.001705214031971991
-        DEBUG:root:i=84 residual=0.0016554755857214332
-        DEBUG:root:i=85 residual=0.0016080320347100496
-        DEBUG:root:i=86 residual=0.0015627194661647081
-        DEBUG:root:i=87 residual=0.001519430079497397
-        DEBUG:root:i=88 residual=0.0014780594501644373
-        DEBUG:root:i=89 residual=0.0014384739333763719
-        DEBUG:root:i=90 residual=0.0014005572302266955
-        DEBUG:root:i=91 residual=0.0013642337871715426
-        DEBUG:root:i=92 residual=0.0013293965021148324
-        DEBUG:root:i=93 residual=0.0012959778541699052
-        DEBUG:root:i=94 residual=0.001263876329176128
-        DEBUG:root:i=95 residual=0.0012330460594967008
-        DEBUG:root:i=96 residual=0.0012033917009830475
-        DEBUG:root:i=97 residual=0.001174872275441885
-        DEBUG:root:i=98 residual=0.0011474145576357841
-        DEBUG:root:i=99 residual=0.0011209737276658416
-        DEBUG:root:i=100 residual=0.0010954836616292596
-        DEBUG:root:i=101 residual=0.0010709064081311226
-        DEBUG:root:i=102 residual=0.0010471936548128724
-        DEBUG:root:i=103 residual=0.0010242975549772382
-        DEBUG:root:i=104 residual=0.00100218434818089
         DEBUG:root:i=105 residual=0.00098081910982728
         DEBUG:root:i=106 residual=0.0009601557976566255
         DEBUG:root:i=107 residual=0.0009401643765158951
@@ -1283,23 +1069,6 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
         DEBUG:root:i=641 residual=1.6014919310691766e-06
         DEBUG:root:i=642 residual=1.5859955055930186e-06
         DEBUG:root:i=643 residual=1.5672285371692851e-06
-        DEBUG:root:i=644 residual=1.550790784676792e-06
-        DEBUG:root:i=645 residual=1.5377654563053511e-06
-        DEBUG:root:i=646 residual=1.5260876580214244e-06
-        DEBUG:root:i=647 residual=1.503594603491365e-06
-        DEBUG:root:i=648 residual=1.4831118733127369e-06
-        DEBUG:root:i=649 residual=1.468720483899233e-06
-        DEBUG:root:i=650 residual=1.4564999446520233e-06
-        DEBUG:root:i=651 residual=1.4379874073711107e-06
-        DEBUG:root:i=652 residual=1.4211528878149693e-06
-        DEBUG:root:i=653 residual=1.4076056231715484e-06
-        DEBUG:root:i=654 residual=1.390565671499644e-06
-        DEBUG:root:i=655 residual=1.3766396023129346e-06
-        DEBUG:root:i=656 residual=1.362696025353216e-06
-        DEBUG:root:i=657 residual=1.3466877817336353e-06
-        DEBUG:root:i=658 residual=1.3309678479345166e-06
-        DEBUG:root:i=659 residual=1.3159411764718243e-06
-        DEBUG:root:i=660 residual=1.3018988056501257e-06
         DEBUG:root:i=661 residual=1.2877704875791096e-06
         DEBUG:root:i=662 residual=1.2746759239234962e-06
         DEBUG:root:i=663 residual=1.2621732139450614e-06
