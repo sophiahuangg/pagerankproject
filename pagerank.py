@@ -12,7 +12,9 @@ import csv
 import numpy as np
 
 import logging
+import gensim.downloader
 
+vectors = gensim.downloader.load('glove-twitter-50')
 
 class WebGraph():
 
@@ -121,7 +123,7 @@ class WebGraph():
 
             for i in range(0, n):
                 url = self._index_to_url(i)
-                print("url=", url)
+                #print("url=", url)
                 if url_satisfies_query(url, query):
                     # setting the corresponding index to one
                     v[i] = 1
@@ -202,24 +204,69 @@ class WebGraph():
             return x.squeeze()
 
 
-    def search(self, pi, query='', max_results=10):
+    def search(self, pi, query='', max_results=10, p = 45):
         '''
         Logs all urls that match the query.
         Results are displayed in sorted order according to the pagerank vector pi.
         '''
+        # task 2
+
         n = self.P.shape[0]
         vals,indices = torch.topk(pi,n)
+        
+        
+        urls = [self._index_to_url(index.item()) for index in indices]
+        page = [val.item() for val in vals]
+        
+        scores = []
+        words = []
+
+        terms = query.split()
+        for term in terms:
+            if term[0] != '-':
+                words += similar_words(term, add_score = True)
+
+        if query == '':
+            scores = page
+        else:
+            for i, url in enumerate(urls):
+                score = 0
+                for word_vector in words:
+                    word = word_vector[0]
+                    word_score = word_vector[1]
+                    new_n = url.count(word)
+                    score += new_n*(word_score**p)
+
+
+                ranking = page[i] * score
+                scores.append(ranking)
+
+        url_score = list(zip(urls, scores))
+        url_score.sort(key = lambda x: x[1], reverse = True)
 
         matches = 0
         for i in range(n):
             if matches >= max_results:
                 break
-            index = indices[i].item()
-            url = self._index_to_url(index)
-            pagerank = vals[i].item()
+            url = url_score[i][0]
             if url_satisfies_query(url,query):
-                logging.info(f'rank={matches} pagerank={pagerank:0.4e} url={url}')
+                ranking = url_score[i][1]
+                logging.info(f'rank = {matches} ranking = {ranking:0.4e} url= {url}')
                 matches += 1
+
+
+def similar_words(term, add_score = False):
+    similar_words_v = vectors.most_similar(term)[:5]
+
+    similar = []
+    if not add_score:
+        for i in similar_words_v:
+            similar.append(i[0])
+    else:
+        return similar_words_v
+    
+    return similar
+
 
 
 def url_satisfies_query(url, query):
@@ -249,13 +296,17 @@ def url_satisfies_query(url, query):
     '''
     satisfies = False
     terms = query.split()
-
     num_terms=0
     for term in terms:
         if term[0] != '-':
             num_terms+=1
+            similar_terms = similar_words(term)
             if term in url:
                 satisfies = True
+            for similar_term in similar_terms:
+                if similar_term in url:
+                    satisfies = True
+    
     if num_terms==0:
         satisfies=True
 
