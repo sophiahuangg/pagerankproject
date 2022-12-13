@@ -527,6 +527,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
 	INFO:root:rank = 7 ranking = 1.4957e-01 url= www.lawfareblog.com/todays-headlines-and-commentary-1962
 	INFO:root:rank = 8 ranking = 1.4367e-01 url= www.lawfareblog.com/cyberlaw-podcast-mistrusting-google
 	INFO:root:rank = 9 ranking = 1.4240e-01 url= www.lawfareblog.com/lawfare-podcast-bonus-edition-gordon-sondland-vs-committee-no-bull   
+   ```
 
    Task 1, part 4:
    ```
