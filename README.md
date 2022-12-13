@@ -415,42 +415,41 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    ```
    $ python3 pagerank.py --data=data/small.csv.gz --verbose
    
-    DEBUG:root:computing indices
-    DEBUG:root:computing values
-    n= 6
-    DEBUG:root:i=0 residual=0.2562914192676544
-    DEBUG:root:i=1 residual=0.11841227114200592
-    DEBUG:root:i=2 residual=0.07070134580135345
-    DEBUG:root:i=3 residual=0.03181542828679085
-    DEBUG:root:i=4 residual=0.020496590062975883
-    DEBUG:root:i=5 residual=0.01010835450142622
-    DEBUG:root:i=6 residual=0.006371544674038887
-    DEBUG:root:i=7 residual=0.0034227892756462097
-    DEBUG:root:i=8 residual=0.002087961183860898
-    DEBUG:root:i=9 residual=0.0011749734403565526
-    DEBUG:root:i=10 residual=0.0007012754795141518
-    DEBUG:root:i=11 residual=0.00040320929838344455
-    DEBUG:root:i=12 residual=0.00023798426263965666
-    DEBUG:root:i=13 residual=0.00013812065299134701
-    DEBUG:root:i=14 residual=8.108324982458726e-05
-    DEBUG:root:i=15 residual=4.7269360948121175e-05
-    DEBUG:root:i=16 residual=2.7704918466042727e-05
-    DEBUG:root:i=17 residual=1.6170568414963782e-05
-    DEBUG:root:i=18 residual=9.479118489252869e-06
-    DEBUG:root:i=19 residual=5.4782999541203026e-06
-    DEBUG:root:i=20 residual=3.2123323308042018e-06
-    DEBUG:root:i=21 residual=1.8802053318722756e-06
-    DEBUG:root:i=22 residual=1.1228398761886638e-06
-    DEBUG:root:i=23 residual=6.322027275018627e-07
-    INFO:root:rank=0 pagerank=6.6270e-01 url=4
-    INFO:root:rank=1 pagerank=5.2179e-01 url=6
-    INFO:root:rank=2 pagerank=4.1434e-01 url=5
-    INFO:root:rank=3 pagerank=2.3175e-01 url=2
-    INFO:root:rank=4 pagerank=1.8590e-01 url=3
-    INFO:root:rank=5 pagerank=1.6917e-01 url=1
-
+	DEBUG:root:computing indices
+	DEBUG:root:computing values
+	n= 6
+	DEBUG:root:i=0 residual=0.2562914192676544
+	DEBUG:root:i=1 residual=0.11841227114200592
+	DEBUG:root:i=2 residual=0.07070134580135345
+	DEBUG:root:i=3 residual=0.03181542828679085
+	DEBUG:root:i=4 residual=0.020496590062975883
+	DEBUG:root:i=5 residual=0.01010835450142622
+	DEBUG:root:i=6 residual=0.006371544674038887
+	DEBUG:root:i=7 residual=0.0034227892756462097
+	DEBUG:root:i=8 residual=0.002087961183860898
+	DEBUG:root:i=9 residual=0.0011749734403565526
+	DEBUG:root:i=10 residual=0.0007012754795141518
+	DEBUG:root:i=11 residual=0.00040320929838344455
+	DEBUG:root:i=12 residual=0.00023798426263965666
+	DEBUG:root:i=13 residual=0.00013812065299134701
+	DEBUG:root:i=14 residual=8.108324982458726e-05
+	DEBUG:root:i=15 residual=4.7269360948121175e-05
+	DEBUG:root:i=16 residual=2.7704918466042727e-05
+	DEBUG:root:i=17 residual=1.6170568414963782e-05
+	DEBUG:root:i=18 residual=9.479118489252869e-06
+	DEBUG:root:i=19 residual=5.4782999541203026e-06
+	DEBUG:root:i=20 residual=3.2123323308042018e-06
+	DEBUG:root:i=21 residual=1.8802053318722756e-06
+	DEBUG:root:i=22 residual=1.1228398761886638e-06
+	DEBUG:root:i=23 residual=6.322027275018627e-07
+	INFO:root:rank = 0 ranking = 6.6270e-01 url= 4
+	INFO:root:rank = 1 ranking = 5.2179e-01 url= 6
+	INFO:root:rank = 2 ranking = 4.1434e-01 url= 5
+	INFO:root:rank = 3 ranking = 2.3175e-01 url= 2
+	INFO:root:rank = 4 ranking = 1.8590e-01 url= 3
+	INFO:root:rank = 5 ranking = 1.6917e-01 url= 1
    ```
-
+	
    Task 1, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
