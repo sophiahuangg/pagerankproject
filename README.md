@@ -1351,6 +1351,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    ```
 
    Task 2, part 2:
+
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
    
